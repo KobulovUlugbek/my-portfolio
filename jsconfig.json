@@ -5,3 +5,15 @@
     }
   }
 }
+
+
+// {
+//   "compilerOptions": {
+//     "target": "ES6",
+//     "module": "commonjs",
+//     "jsx": "react"
+//   },
+//   "include": [
+//     "app/**/*" 
+//   ]
+// }
