@@ -26,11 +26,8 @@ export const Header = () => {
 
 
                 {/* mobile nav */}
-                <div className="xl:hidden justify-between items-center mt-4">
-                    <Nav />
-                    <Link href="/contact">
-                        <Button>Hire me</Button>
-                    </Link>
+                <div className="xl:hidden">
+
                 </div>
 
             </div>

@@ -15,8 +15,9 @@ export const PageTransition = ({ children }) => {
           initial={{ opacity: 1 }}
           animate={{ 
             opacity: 0, 
-            transition: { duration: 0.4, ease: "easeInOut", delay: 1 } 
+            transition: { duration: 0.4, ease: "easeInOut", delay: 1  } 
           }}
+          //hier Sekunde anpassen
           className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
         />
         {children}
