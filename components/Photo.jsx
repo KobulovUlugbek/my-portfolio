@@ -19,8 +19,9 @@ const Photo = () => {
                         transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" }
                     }}
                     //w-[298px] h-[298px]
-                    className="w-[250px] h-[250px] xl:w-[498px] xl:h-[498px] mix-blend-normal absolute">
-                    <Image src="/assets/Profilbild.png" alt="" priority quality={100} fill className="object-contain" />
+                    className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-normal absolute">
+                    <Image src="/assets/image.png" alt="" priority quality={100} fill className="object-contain rounded-full"
+                    style={{ padding: '2px', paddingLeft:'8px' }} />
                 </motion.div>
 
                 {/* circle */}
