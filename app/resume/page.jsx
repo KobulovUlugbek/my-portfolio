@@ -12,6 +12,7 @@ import {
   FaHtml5,
   FaJira,
   FaServer,
+  FaShapes,
 } from "react-icons/fa";
 
 import { SiGraphql, SiTailwindcss, SiTypescript } from "react-icons/si";
