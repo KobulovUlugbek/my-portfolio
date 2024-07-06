@@ -9,7 +9,7 @@ import StairTransition from "@/components/StairTransition";
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: '--font-jenbrainsMono'
+  variable: "--font-jenbrainsMono",
 });
 
 export const metadata = {
@@ -20,15 +20,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="icon" type="image/png" href="/assets/myfavicon.png" />
 
       <body className={jetbrainsMono.variable}>
-        
         <Header />
-        <StairTransition/>
+        <StairTransition />
         <PageTransition>{children}</PageTransition>
-
       </body>
-
     </html>
   );
 }
