@@ -74,10 +74,18 @@ export const Contact = () => {
                 <SelectContent>
                   <SelectGroup label="Services">
                     <SelectLabel>Select a service</SelectLabel>
+                    <SelectItem value="Web Development">Web Development</SelectItem>
+                    <SelectItem value="Mobile Development">Mobile Development</SelectItem>
+                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
+                  </SelectGroup>
+
+                  {/* <SelectGroup label="Services">
+                    <SelectLabel>Select a service</SelectLabel>
                     <SelectItem value="est">Web Development</SelectItem>
                     <SelectItem value="cst">Mobile Development</SelectItem>
                     <SelectItem value="mst">UI/UX Design</SelectItem>
-                  </SelectGroup>
+                  </SelectGroup> */}
+
                 </SelectContent>
               </Select>
               {/* textarea */}
