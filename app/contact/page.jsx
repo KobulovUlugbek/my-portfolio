@@ -61,13 +61,13 @@ export const Contact = () => {
                 Officia, natus!
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" name="name" placeholder="Firstname" />
-                <Input type="lastname" name="name" placeholder="Lastname" />
+                <Input type="firstname" name="firstname" placeholder="Firstname" />
+                <Input type="lastname" name="lastname" placeholder="Lastname" />
                 <Input type="email" name="email" placeholder="Email address" />
-                <Input type="phone" name="message" placeholder="Phone number" />
+                <Input type="phone" name="phone" placeholder="Phone number" />
               </div>
               {/* select */}
-              <Select>
+              <Select name="service">
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
