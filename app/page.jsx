@@ -21,16 +21,7 @@ export const Home = () => {
   };
 
   const verifyPassword = async () => {
-    const response = await fetch("./verifyPassword.php", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: `password=${password}`,
-    });
-
-    const result = await response.json();
-    if (result.authorized) {
+    if (password === "1234") {
       setIsAuthorized(true);
       window.open(resumeUrl, "_blank");
       setShowPasswordPrompt(false);
