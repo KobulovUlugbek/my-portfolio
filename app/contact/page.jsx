@@ -38,37 +38,6 @@ const info = [
 import { motion } from "framer-motion";
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    console.log("Daten gesendet:", formData);
-    setTimeout(() => {
-      setIsLoading(false);
-      setFormData({
-        firstname: "",
-        lastname: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    }, 2000);
-  };
-
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -83,7 +52,6 @@ export const Contact = () => {
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form
-              onSubmit={handleSubmit}
               action="https://ulugbek-kobulov.com/send_mail.php"
               method="POST"
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
@@ -102,32 +70,24 @@ export const Contact = () => {
                   required
                   type="firstname"
                   name="firstname"
-                  value={formData.firstname}
-                  onChange={handleChange}
                   placeholder="Vorname"
                 />
                 <Input
                   required
                   type="lastname"
                   name="lastname"
-                  value={formData.lastname}
-                  onChange={handleChange}
                   placeholder="Nachname"
                 />
                 <Input
                   required
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   placeholder="E-Mail Adresse"
                 />
                 <Input
                   required
                   type="phone"
                   name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
                   placeholder="Telefonnummer"
                 />
               </div>
@@ -142,8 +102,12 @@ export const Contact = () => {
                     <SelectItem value="Web-/Front-End-Entwicklung">
                       Web-/Front-End-Entwicklung
                     </SelectItem>
-                    <SelectItem value="Freiberufliche Webentwicklung">Freiberufliche Webentwicklung</SelectItem>
-                    <SelectItem value="Responsive Webdesign">Responsive Webdesign</SelectItem>
+                    <SelectItem value="Freiberufliche Webentwicklung">
+                      Freiberufliche Webentwicklung
+                    </SelectItem>
+                    <SelectItem value="Responsive Webdesign">
+                      Responsive Webdesign
+                    </SelectItem>
                     <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
                   </SelectGroup>
 
@@ -159,18 +123,12 @@ export const Contact = () => {
               <Textarea
                 required
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
                 placeholder="Nachricht"
                 className="h-[200px]"
               />
               {/* btn */}
-              <Button
-                size="md"
-                className="max-w-40 h-[48px]"
-                disabled={isLoading}
-              >
-                {isLoading ? "Laden..." : "Nachricht senden"}
+              <Button size="md" className="max-w-40 h-[48px]">
+                Nachricht senden
               </Button>
             </form>
           </div>
