@@ -15,9 +15,11 @@ export const Home = () => {
   const [password, setPassword] = useState("");
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [showPasswordPrompt, setShowPasswordPrompt] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
+    setErrorMessage("");
   };
 
   const verifyPassword = async () => {
@@ -26,7 +28,7 @@ export const Home = () => {
       window.open(resumeUrl, "_blank");
       setShowPasswordPrompt(false);
     } else {
-      alert(result.message);
+      setErrorMessage("Falsches Passwort, bitte versuchen Sie es erneut.");
       setIsAuthorized(false);
     }
     setPassword("");
@@ -34,11 +36,13 @@ export const Home = () => {
 
   const handleDownloadClick = () => {
     setShowPasswordPrompt(true);
+    setErrorMessage("");
   };
 
   const handleCancelClick = () => {
     setShowPasswordPrompt(false);
     setPassword("");
+    setErrorMessage("");
   };
 
   return (
@@ -72,7 +76,10 @@ export const Home = () => {
                   <FiDownload className="text-xl" />
                 </Button>
               ) : (
-                <div className="flex items-center gap-2 mb-8 xl:mb-0">
+                <div className="relative flex items-center gap-2 mb-8 xl:mb-0">
+                   {errorMessage && (
+                    <p className="absolute top-[-22px] text-red-500 text-xs">{errorMessage}</p>
+                  )}
                   <input
                     className="flex h-[48px] rounded-md border border-white/10 focus:border-accent font-light bg-primary px-4 py-5 text-base placeholder:text-white/60 outline-none"
                     type="password"
