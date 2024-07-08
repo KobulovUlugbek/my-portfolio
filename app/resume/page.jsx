@@ -55,28 +55,28 @@ const about = {
 
 const experience = {
   icon: "public/next.svg",
-  title: "My Experience",
+  title: "Meine Erfahrungen",
   description:
-    "I have a strong background in web development, with a focus on creating responsive and user-friendly front-end designs. My journey includes hands-on training in web applications and front-end technologies, where I have developed skills in optimizing user experience and interface design.",
+  "Ich bringe eine umfassende Erfahrung in der Webentwicklung mit, insbesondere in der Gestaltung responsiver und benutzerfreundlicher Front-End-Designs. Meine berufliche Laufbahn umfasst intensive Praxisschulungen in Webapplikationen und Front-End-Technologien, in denen ich spezialisierte Fähigkeiten zur Optimierung von Benutzererfahrung und Schnittstellendesign entwickelt habe.",
   items: [
     {
       company: "Digital A-Team",
-      position: "Frontend Developer",
+      position: "Frontend Entwickler",
       duration: "2023 - 2024",
     },
     {
       company: "Die Zieglerschen - Diakonie Stetten",
-      position: "Work Educator",
+      position: "Arbeitserzieher",
       duration: "2021-2023",
     },
     {
       company: "Die Zieglerschen - Diakonie Stetten",
-      position: "FsJ - Volunteer Social Worker",
+      position: "FsJ - Freiwilliges Soziales Jahr",
       duration: "2017-2018",
     },
     {
       company: "Autohaus Chevrolet and Daewoo",
-      position: "Car Mechanic",
+      position: "Kfz-Mechatroniker",
       duration: "2013-2017",
     },
   ],
@@ -86,34 +86,34 @@ const experience = {
 
 const education = {
   icon: "public/next.svg",
-  title: "My Education",
+  title: "Meine Ausbildung",
   description:
-    "My educational background spans a variety of disciplines, each contributing unique skills and insights to my development as a web professional. I have undergone rigorous training in web development, with a specific focus on front-end technologies and web applications, complemented by my earlier studies in social work and mechanics. This diverse educational journey has equipped me with a broad perspective and versatile skills set, enabling me to tackle complex challenges in web development with a holistic approach.",
+  "Mein Bildungsweg verbindet technische und soziale Ausbildungen, darunter ein Front-End Webentwicklung Bootcamp, eine Zertifizierung als Arbeitserzieher und eine Ausbildung als Kfz-Mechaniker. Diese Kombination verleiht mir tiefgehende technische Kenntnisse und ausgeprägte kommunikative Fähigkeiten, die es mir ermöglichen, Webprojekte effektiv und lösungsorientiert umzusetzen.",
   items: [
     {
-      institution: "Online Course Platform - Developer Akademie",
+      institution: "Weiterbildung - Developer Akademie",
       degree: "Front-End Web Development Bootcamp",
       duration: "2023",
     },
     {
-      institution: "Diakonisches Institut for Social Professions",
-      degree: "Certified Social Worker",
+      institution: "Diakonisches Institut für Soziale Berufe",
+      degree: "Staatlich anerkannter Arbeitserzieher",
       duration: "2018-2021",
     },
     {
-      institution: "Technical and Design College",
-      degree: "Certified Car Mechanic",
+      institution: "Technische Berufsschule",
+      degree: "Zertifizierter Kfz-Mechaniker",
       duration: "2010-2013",
-    },
+    },    
   ],
 };
 
 // skills data
 
 const skills = {
-  title: "My Skills",
+  title: "Meine Fähigkeiten",
   description:
-    "I have a strong foundation in front-end development, with a focus on creating responsive and user-friendly interfaces. My skills span a range of front-end technologies, enabling me to build efficient and scalable web applications that enhance user experience and engagement. I am proficient in the following technologies:",
+  "Ich habe eine starke Basis in der Front-End-Entwicklung und bin auf die Gestaltung responsiver und benutzerfreundlicher Interfaces spezialisiert. Meine Kompetenzen erstrecken sich über diverse Front-End-Technologien, mit denen ich effiziente und skalierbare Webanwendungen realisiere, die sowohl die Benutzererfahrung als auch die Nutzerbindung verbessern. Folgende Technologien beherrsche ich sicher:",
   skillList: [
     {
       icon: <FaReact />,
@@ -205,10 +205,10 @@ export const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="experience">Erfahrungen</TabsTrigger>
+            <TabsTrigger value="education">Ausbildung</TabsTrigger>
+            <TabsTrigger value="skills">Fähigkeiten</TabsTrigger>
+            <TabsTrigger value="about">Über mich</TabsTrigger>
           </TabsList>
 
           {/* content */}
