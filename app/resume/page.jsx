@@ -20,33 +20,33 @@ import { SiGraphql, SiTailwindcss, SiTypescript } from "react-icons/si";
 // about data
 
 const about = {
-  title: "About me",
+  title: "Über mich",
   description:
-    "As a passionate and dedicated Web Developer, I specialize in crafting efficient and scalable front-end architectures. My expertise lies in leveraging the latest web technologies to create responsive, intuitive interfaces that enhance user interaction and satisfaction. I am committed to continuous learning and applying innovative solutions to solve complex problems in web development.",
+  "Als leidenschaftlicher und engagierter Webentwickler spezialisiere ich mich auf die Erstellung effizienter und skalierbarer Front-End-Architekturen. Mein Fachwissen liegt darin, die neuesten Webtechnologien zu nutzen, um responsive, intuitive Schnittstellen zu schaffen, die die Interaktion und Zufriedenheit der Benutzer verbessern. Ich bin bestrebt, kontinuierlich zu lernen und innovative Lösungen zur Lösung komplexer Probleme in der Webentwicklung anzuwenden.",
   info: [
     {
       fieldName: "Name",
       fieldValue: "Ulugbek Kobulov",
     },
     {
-      fieldName: "Phone",
+      fieldName: "Telefon",
       fieldValue: "(+49) 1515 733 88 40",
     },
     {
-      fieldName: "Experience",
-      fieldValue: "2+ Years",
+      fieldName: "Erfahrung",
+      fieldValue: "Mehr als 2 Jahre",
     },
     {
       fieldName: "Email",
       fieldValue: "contact@ulugbek-kobulov.com",
     },
     {
-      fieldName: "Freelance",
-      fieldValue: "Available",
+      fieldName: "Freiberuflich",
+      fieldValue: "Verfügbar",
     },
     {
-      fieldName: "Languages",
-      fieldValue: "German, English, Russian, Uzbek",
+      fieldName: "Sprachen",
+      fieldValue: "Deutsch, Englisch, Russisch, Usbekisch",
     },
   ],
 };

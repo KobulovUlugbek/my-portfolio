@@ -19,18 +19,18 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: "Phone",
+    title: "Telefon",
     description: "(+49) 1515 733 88 40",
   },
   {
     icon: <FaEnvelope />,
-    title: "Email",
+    title: "E-Mail",
     description: "contact@ulugbek-kobulov.com",
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Address",
-    description: "Friedrichshafen, Germany",
+    title: "Adresse",
+    description: "Friedrichshafen, Deutschland",
   },
 ];
 
@@ -55,28 +55,26 @@ export const Contact = () => {
               method="POST"
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
             >
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">Lass uns zusammenarbeiten</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officia, natus!
+              Ich freue mich auf deine Nachricht! Ob du Fragen zu meinen Diensten hast, an einer Zusammenarbeit interessiert bist oder einfach Hallo sagen möchtest – zögere nicht, mich zu kontaktieren.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" name="firstname" placeholder="Firstname" />
-                <Input type="lastname" name="lastname" placeholder="Lastname" />
-                <Input type="email" name="email" placeholder="Email address" />
+                <Input type="firstname" name="firstname" placeholder="Vorname" />
+                <Input type="lastname" name="lastname" placeholder="Nachname" />
+                <Input type="email" name="email" placeholder="E-Mail Adresse" />
                 <Input type="phone" name="phone" placeholder="Phone number" />
               </div>
               {/* select */}
               <Select name="service">
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
+                  <SelectValue placeholder="Wähle einen Service aus" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup label="Services">
-                    <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="Web Development">Web Development</SelectItem>
-                    <SelectItem value="Mobile Development">Mobile Development</SelectItem>
-                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
+                    <SelectLabel>Wähle einen Service aus</SelectLabel>
+                    <SelectItem value="Web-/Front-End-Entwicklung">Web-/Front-End-Entwicklung</SelectItem>
+                    <SelectItem value="Freiberuflich">Freiberuflich</SelectItem>
                   </SelectGroup>
 
                   {/* <SelectGroup label="Services">
@@ -91,12 +89,12 @@ export const Contact = () => {
               {/* textarea */}
               <Textarea
                 name="message"
-                placeholder="Type your message here."
+                placeholder="Nachricht"
                 className="h-[200px]"
               />
               {/* btn */}
               <Button size="md" className="max-w-40 h-[48px]">
-                Send message
+                Nachricht senden
               </Button>
             </form>
           </div>
