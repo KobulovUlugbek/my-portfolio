@@ -2,6 +2,12 @@
 
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const services = [
   {
@@ -9,28 +15,28 @@ const services = [
     title: "Web Development",
     description:
       "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
-    href: "",
+    href: "/contact",
   },
   {
     num: "02",
     title: "Web Development",
     description:
       "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
-    href: "",
+    href: "/contact",
   },
   {
     num: "03",
     title: "Web Development",
     description:
       "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
-    href: "",
+    href: "/contact",
   },
   {
     num: "04",
     title: "Web Development",
     description:
       "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
-    href: "",
+    href: "/contact",
   },
 ];
 
@@ -63,12 +69,26 @@ export const Services = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                     {service.num}
                   </div>
-                  <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
-                    <BsArrowDownRight className="text-primary text-3xl"/>
-                  </Link>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Link
+                          href={service.href}
+                          className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                        >
+                          <BsArrowDownRight className="text-primary text-3xl" />
+                        </Link>
+                      </TooltipTrigger>
+                      <TooltipContent side="top">
+                        Jetzt mit mir Kontakt aufnehmen
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </div>
                 {/* service title */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">{service.title}</h2>
+                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                  {service.title}
+                </h2>
                 {/* description */}
                 <p className="text-white/60">{service.description}</p>
                 {/* border */}
