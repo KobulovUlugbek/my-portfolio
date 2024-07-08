@@ -12,30 +12,26 @@ import {
 const services = [
   {
     num: "01",
-    title: "Web Development",
-    description:
-      "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+    title: "Web-/Front-End-Entwicklung",
+    description: "Entwicklung von benutzerfreundlichen Websites, die sowohl ästhetisch ansprechend als auch funktional sind, um Ihr Online-Marketing zu stärken.",
     href: "/contact",
   },
   {
     num: "02",
-    title: "Web Development",
-    description:
-      "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+    title: "Freiberufliche Webentwicklung",
+    description: "Individuelle Webentwicklung, angepasst an Ihre geschäftlichen Bedürfnisse, um Ihr digitales Potenzial voll auszuschöpfen.",
     href: "/contact",
   },
   {
     num: "03",
-    title: "Web Development",
-    description:
-      "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+    title: "Responsive Webdesign",
+    description: "Gestaltung von Websites, die auf jeder Bildschirmgröße perfekt funktionieren, um eine optimale Benutzererfahrung zu gewährleisten.",
     href: "/contact",
   },
   {
     num: "04",
-    title: "Web Development",
-    description:
-      "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+    title: "UI/UX Design",
+    description: "Konzeption und Design intuitiver Benutzeroberflächen, die die Nutzerinteraktion und -zufriedenheit verbessern.",
     href: "/contact",
   },
 ];

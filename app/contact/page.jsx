@@ -142,7 +142,9 @@ export const Contact = () => {
                     <SelectItem value="Web-/Front-End-Entwicklung">
                       Web-/Front-End-Entwicklung
                     </SelectItem>
-                    <SelectItem value="Freiberuflich">Freiberuflich</SelectItem>
+                    <SelectItem value="Freiberufliche Webentwicklung">Freiberufliche Webentwicklung</SelectItem>
+                    <SelectItem value="Responsive Webdesign">Responsive Webdesign</SelectItem>
+                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
                   </SelectGroup>
 
                   {/* <SelectGroup label="Services">
