@@ -129,7 +129,7 @@ export const Contact = () => {
                 className="h-[150px]"
               />
               {/* btn */}
-              <Button size="md" className="max-w-44 h-[48px]">
+              <Button size="md" variant="outline" className="max-w-44 h-[44px] uppercase flex items-center gap-2">
                 Nachricht senden
               </Button>
             </form>
