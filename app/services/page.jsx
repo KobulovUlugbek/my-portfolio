@@ -76,7 +76,7 @@ export const Services = () => {
                         </Link>
                       </TooltipTrigger>
                       <TooltipContent side="top">
-                        Jetzt mit mir Kontakt aufnehmen
+                        Nehmen Sie jetzt Kontakt mit mir auf.
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>

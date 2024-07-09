@@ -57,13 +57,13 @@ export const Contact = () => {
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
             >
               <h3 className="text-4xl text-accent">
-                Lass uns zusammenarbeiten
+                Lassen Sie uns zusammenarbeiten.
               </h3>
               <p className="text-white/60">
-                Ich freue mich auf deine Nachricht! Ob du Fragen zu meinen
-                Diensten hast, an einer Zusammenarbeit interessiert bist oder
-                einfach Hallo sagen möchtest – zögere nicht, mich zu
-                kontaktieren.
+                Ich freue mich auf Ihre Nachricht! Ob Sie Fragen zu meinen
+                Dienstleistungen haben, an einer Zusammenarbeit interessiert
+                sind oder einfach nur Hallo sagen möchten – zögern Sie nicht,
+                mich zu kontaktieren.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
@@ -94,11 +94,11 @@ export const Contact = () => {
               {/* select */}
               <Select name="service">
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Wähle einen Service aus" />
+                  <SelectValue placeholder="Wählen Sie einen Service aus" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup label="Services">
-                    <SelectLabel>Wähle einen Service aus</SelectLabel>
+                    <SelectLabel>Wählen Sie einen Service aus</SelectLabel>
                     <SelectItem value="Web-/Front-End-Entwicklung">
                       Web-/Front-End-Entwicklung
                     </SelectItem>
@@ -124,10 +124,10 @@ export const Contact = () => {
                 required
                 name="message"
                 placeholder="Nachricht"
-                className="h-[200px]"
+                className="h-[150px]"
               />
               {/* btn */}
-              <Button size="md" className="max-w-40 h-[48px]">
+              <Button size="md" className="max-w-44 h-[48px]">
                 Nachricht senden
               </Button>
             </form>
