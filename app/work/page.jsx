@@ -48,8 +48,8 @@ const projects = [
       { name: "SCSS" },
       { name: "Firebase" },
     ],
-    image: "/assets/project_img/Join.png",
-    live: "",
+    image: "/assets/project_img/trailerflix.png",
+    live: "https://ulugbek-kobulov.com/trailerflix/",
     github: "",
   },
   {
@@ -64,8 +64,8 @@ const projects = [
       { name: "SCSS" },
       { name: "Firebase" },
     ],
-    image: "/assets/project_img/trailerflix.png",
-    live: "",
+    image: "/assets/project_img/elpolloloco.png",
+    live: "https://ulugbek-kobulov.com/jump-and-run/",
     github: "",
   },
   {
@@ -80,8 +80,8 @@ const projects = [
       { name: "SCSS" },
       { name: "Firebase" },
     ],
-    image: "/",
-    live: "",
+    image: "/assets/project_img/joindummy.png",
+    live: "https://ulugbek-kobulov.com/join/",
     github: "",
   },
 ];
