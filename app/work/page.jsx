@@ -41,48 +41,38 @@ const projects = [
     category: "Web Development",
     title: "project 2",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Die auf Angular und TypeScript basierende TrailerFlix-Website ist eine dynamische Plattform, die über eine API JSON-Daten abruft und auf deren Basis die gesamte Website generiert. Diese innovative Anwendung bietet den Nutzern ein nahtloses Erlebnis beim Ansehen von Filmtrailern und Informationen.",
     stack: [
       { name: "Angular" },
       { name: "TypeScript" },
+      { name: "API" },
       { name: "SCSS" },
-      { name: "Firebase" },
     ],
     image: "/assets/project_img/trailerflix.png",
     live: "https://ulugbek-kobulov.com/trailerflix/",
-    github: "",
+    github: "https://github.com/KobulovUlugbek/TrailerFlix",
   },
   {
     num: "03",
     category: "Web Development",
     title: "project 3",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    stack: [
-      { name: "Angular" },
-      { name: "TypeScript" },
-      { name: "SCSS" },
-      { name: "Firebase" },
-    ],
+      "Das objektorientierte Spiel 'Jump, Run, and Throw' kombiniert ein durchdachtes Design mit einem spannenden Gameplay. Spieler helfen Pepe dabei, Münzen zu sammeln und mit Tabasco-Salsa die Herausforderungen zu überwinden. Durch die Integration von interaktiven Elementen und dynamischen Power-Ups entsteht ein packendes Spielerlebnis.",
+    stack: [{ name: "JavaScript" }, { name: "HTML" }, { name: "CSS" }],
     image: "/assets/project_img/elpolloloco.png",
     live: "https://ulugbek-kobulov.com/jump-and-run/",
-    github: "",
+    github: "https://github.com/KobulovUlugbek/El-POLLO-LOCO",
   },
   {
     num: "04",
     category: "Web Development",
     title: "project 4",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    stack: [
-      { name: "Angular" },
-      { name: "TypeScript" },
-      { name: "SCSS" },
-      { name: "Firebase" },
-    ],
+      "Ich habe eine intuitive Aufgabenverwaltungslösung basierend auf dem Kanban-System entwickelt. Sie ermöglicht das einfache Anordnen von Aufgaben per Drag-and-Drop. Nutzer können Aufgaben Teammitgliedern zuweisen und übersichtlich kategorisieren, was die Organisation vereinfacht und die Benutzerfreundlichkeit steigert.",
+    stack: [{ name: "JavaScript" }, { name: "HTML" }, { name: "CSS" }],
     image: "/assets/project_img/joindummy.png",
     live: "https://ulugbek-kobulov.com/join/",
-    github: "",
+    github: "https://github.com/KobulovUlugbek/Join",
   },
 ];
 
@@ -134,7 +124,7 @@ export const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project btn */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -147,7 +137,7 @@ export const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project btn */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

@@ -92,7 +92,8 @@ export const Contact = () => {
                 />
               </div>
               {/* select */}
-              <Select name="service">
+              
+              {/* <Select name="service">
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Wählen Sie einen Service aus" />
                 </SelectTrigger>
@@ -117,8 +118,9 @@ export const Contact = () => {
                     <SelectItem value="cst">Mobile Development</SelectItem>
                     <SelectItem value="mst">UI/UX Design</SelectItem>
                   </SelectGroup> */}
-                </SelectContent>
-              </Select>
+        {/*         </SelectContent>
+              </Select> */}
+
               {/* textarea */}
               <Textarea
                 required
