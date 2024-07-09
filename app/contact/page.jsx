@@ -21,12 +21,14 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Telefon",
-    description: "(+49) 1515 733 88 40",
+    description: "(+49)15157338840",
+    href: "tel:+4915157338840",
   },
   {
     icon: <FaEnvelope />,
     title: "E-Mail",
     description: "contact@ulugbek-kobulov.com",
+    href: "mailto:contact@ulugbek-kobulov.com",
   },
   {
     icon: <FaMapMarkedAlt />,
@@ -145,7 +147,12 @@ export const Contact = () => {
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
+                      <a
+                      target="_blank"
+                        href={item.href}
+                      >
                       <h3 className="text-xl">{item.description}</h3>
+                      </a>
                     </div>
                   </li>
                 );

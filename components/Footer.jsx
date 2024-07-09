@@ -41,7 +41,7 @@ const Footer = () => {
                       Ulugbek Kobulov
                       <br />
                       Hohenstaufenplatz 6<br />
-                      6<br />
+                      <br />
                       88046 Friedrichshafen
                     </p>
 

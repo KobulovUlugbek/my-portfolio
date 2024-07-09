@@ -22,7 +22,7 @@ import { SiGraphql, SiTailwindcss, SiTypescript } from "react-icons/si";
 const about = {
   title: "Über mich",
   description:
-  "Als leidenschaftlicher und engagierter Webentwickler spezialisiere ich mich auf die Erstellung effizienter und skalierbarer Front-End-Architekturen. Mein Fachwissen liegt darin, die neuesten Webtechnologien zu nutzen, um responsive, intuitive Schnittstellen zu schaffen, die die Interaktion und Zufriedenheit der Benutzer verbessern. Ich bin bestrebt, kontinuierlich zu lernen und innovative Lösungen zur Lösung komplexer Probleme in der Webentwicklung anzuwenden.",
+    "Als leidenschaftlicher und engagierter Webentwickler spezialisiere ich mich auf die Erstellung effizienter und skalierbarer Front-End-Architekturen. Mein Fachwissen liegt darin, die neuesten Webtechnologien zu nutzen, um responsive, intuitive Schnittstellen zu schaffen, die die Interaktion und Zufriedenheit der Benutzer verbessern. Ich bin bestrebt, kontinuierlich zu lernen und innovative Lösungen zur Lösung komplexer Probleme in der Webentwicklung anzuwenden.",
   info: [
     {
       fieldName: "Name",
@@ -30,7 +30,8 @@ const about = {
     },
     {
       fieldName: "Telefon",
-      fieldValue: "(+49) 1515 733 88 40",
+      fieldValue: "(+49)15157338840",
+      href: "tel:+4915157338840",
     },
     {
       fieldName: "Erfahrung",
@@ -39,6 +40,7 @@ const about = {
     {
       fieldName: "Email",
       fieldValue: "contact@ulugbek-kobulov.com",
+      href: "mailto:contact@ulugbek-kobulov.com",
     },
     {
       fieldName: "Freiberuflich",
@@ -57,7 +59,7 @@ const experience = {
   icon: "public/next.svg",
   title: "Meine Erfahrungen",
   description:
-  "Ich bringe eine umfassende Erfahrung in der Webentwicklung mit, insbesondere in der Gestaltung responsiver und benutzerfreundlicher Front-End-Designs. Meine berufliche Laufbahn umfasst intensive Praxisschulungen in Webapplikationen und Front-End-Technologien, in denen ich spezialisierte Fähigkeiten zur Optimierung von Benutzererfahrung und Schnittstellendesign entwickelt habe.",
+    "Ich bringe eine umfassende Erfahrung in der Webentwicklung mit, insbesondere in der Gestaltung responsiver und benutzerfreundlicher Front-End-Designs. Meine berufliche Laufbahn umfasst intensive Praxisschulungen in Webapplikationen und Front-End-Technologien, in denen ich spezialisierte Fähigkeiten zur Optimierung von Benutzererfahrung und Schnittstellendesign entwickelt habe.",
   items: [
     {
       company: "Digital A-Team",
@@ -88,7 +90,7 @@ const education = {
   icon: "public/next.svg",
   title: "Meine Ausbildung",
   description:
-  "Mein Bildungsweg verbindet technische und soziale Ausbildungen, darunter ein Front-End Webentwicklung Bootcamp, eine Zertifizierung als Arbeitserzieher und eine Ausbildung als Kfz-Mechaniker. Diese Kombination verleiht mir tiefgehende technische Kenntnisse und ausgeprägte kommunikative Fähigkeiten, die es mir ermöglichen, Webprojekte effektiv und lösungsorientiert umzusetzen.",
+    "Mein Bildungsweg verbindet technische und soziale Ausbildungen, darunter ein Front-End Webentwicklung Bootcamp, eine Zertifizierung als Arbeitserzieher und eine Ausbildung als Kfz-Mechaniker. Diese Kombination verleiht mir tiefgehende technische Kenntnisse und ausgeprägte kommunikative Fähigkeiten, die es mir ermöglichen, Webprojekte effektiv und lösungsorientiert umzusetzen.",
   items: [
     {
       institution: "Weiterbildung - Developer Akademie",
@@ -104,7 +106,7 @@ const education = {
       institution: "Technische Berufsschule",
       degree: "Zertifizierter Kfz-Mechaniker",
       duration: "2010-2013",
-    },    
+    },
   ],
 };
 
@@ -113,7 +115,7 @@ const education = {
 const skills = {
   title: "Meine Fähigkeiten",
   description:
-  "Ich habe eine starke Basis in der Front-End-Entwicklung und bin auf die Gestaltung responsiver und benutzerfreundlicher Interfaces spezialisiert. Meine Kompetenzen erstrecken sich über diverse Front-End-Technologien, mit denen ich effiziente und skalierbare Webanwendungen realisiere, die sowohl die Benutzererfahrung als auch die Nutzerbindung verbessern. Folgende Technologien beherrsche ich sicher:",
+    "Ich habe eine starke Basis in der Front-End-Entwicklung und bin auf die Gestaltung responsiver und benutzerfreundlicher Interfaces spezialisiert. Meine Kompetenzen erstrecken sich über diverse Front-End-Technologien, mit denen ich effiziente und skalierbare Webanwendungen realisiere, die sowohl die Benutzererfahrung als auch die Nutzerbindung verbessern. Folgende Technologien beherrsche ich sicher:",
   skillList: [
     {
       icon: <FaReact />,
@@ -287,26 +289,26 @@ export const Resume = () => {
                   </p>
                 </div>
                 <ScrollArea className="h-[400px]">
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </ScrollArea>
               </div>
             </TabsContent>
@@ -333,7 +335,14 @@ export const Resume = () => {
                       >
                         <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl" style={noWrapStyle}>
-                          {item.fieldValue}
+                          <a
+                            target="_blank"
+                            className="text-xl"
+                            style={noWrapStyle}
+                            href={item.href}
+                          >
+                            {item.fieldValue}
+                          </a>
                         </span>
                       </li>
                     );
