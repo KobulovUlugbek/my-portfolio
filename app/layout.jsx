@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 
       <body className={jetbrainsMono.variable}>
         <Header />

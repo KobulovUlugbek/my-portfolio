@@ -1,11 +1,15 @@
-# Force HTTPS
+# Force HTTPS and remove www from the domain
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{HTTPS} off
+    
+    # Check if HTTPS is off and if the host starts with www.
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    
+    # Redirect to the same URL with HTTPS and without www
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
-# Optionally, you can include other rules here, such as:
-# Removing www from the domain
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+
