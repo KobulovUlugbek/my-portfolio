@@ -20,7 +20,7 @@ import Image from "next/image";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
 
 const projects = [
-  {
+/*   {
     num: "01",
     category: "Web Development",
     title: "project 1",
@@ -35,11 +35,11 @@ const projects = [
     image: "/assets/project_img/Pollo.png",
     live: "",
     github: "",
-  },
+  }, */
   {
-    num: "02",
+    num: "01",
     category: "Web Development",
-    title: "project 2",
+    title: "project 1",
     description:
       "Die auf Angular und TypeScript basierende TrailerFlix-Website ist eine dynamische Plattform, die über eine API JSON-Daten abruft und auf deren Basis die gesamte Website generiert. Diese innovative Anwendung bietet den Nutzern ein nahtloses Erlebnis beim Ansehen von Filmtrailern und Informationen.",
     stack: [
@@ -53,9 +53,9 @@ const projects = [
     github: "https://github.com/KobulovUlugbek/TrailerFlix",
   },
   {
-    num: "03",
+    num: "02",
     category: "Web Development",
-    title: "project 3",
+    title: "project 2",
     description:
       "Das objektorientierte Spiel 'Jump, Run, and Throw' kombiniert ein durchdachtes Design mit einem spannenden Gameplay. Spieler helfen Pepe dabei, Münzen zu sammeln und mit Tabasco-Salsa die Herausforderungen zu überwinden. Durch die Integration von interaktiven Elementen und dynamischen Power-Ups entsteht ein packendes Spielerlebnis.",
     stack: [{ name: "JavaScript" }, { name: "HTML" }, { name: "CSS" }],
@@ -64,9 +64,9 @@ const projects = [
     github: "https://github.com/KobulovUlugbek/El-POLLO-LOCO",
   },
   {
-    num: "04",
+    num: "03",
     category: "Web Development",
-    title: "project 4",
+    title: "project 3",
     description:
       "Ich habe eine intuitive Aufgabenverwaltungslösung basierend auf dem Kanban-System entwickelt. Sie ermöglicht das einfache Anordnen von Aufgaben per Drag-and-Drop. Nutzer können Aufgaben Teammitgliedern zuweisen und übersichtlich kategorisieren, was die Organisation vereinfacht und die Benutzerfreundlichkeit steigert.",
     stack: [{ name: "JavaScript" }, { name: "HTML" }, { name: "CSS" }],
