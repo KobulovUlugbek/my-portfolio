@@ -12,7 +12,7 @@ const Footer = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { /* delay: 2.4, */ duration: 0.4, ease: "easeIn" },
       }}
     >
       <div className="flex justify-center space-x-4 p-4">
