@@ -59,7 +59,7 @@ const experience = {
   icon: "public/next.svg",
   title: "Meine Erfahrungen",
   description:
-    "Ich bringe eine umfassende Erfahrung in der Webentwicklung mit, insbesondere in der Gestaltung responsiver und benutzerfreundlicher Front-End-Designs. Meine berufliche Laufbahn umfasst intensive Praxisschulungen in Webapplikationen und Front-End-Technologien, in denen ich spezialisierte Fähigkeiten zur Optimierung von Benutzererfahrung und Schnittstellendesign entwickelt habe.",
+    "Ich bringe eine umfassende Erfahrung in der Webentwicklung mit, insbesondere in der Gestaltung responsiver und benutzerfreundlicher Front-End-Designs. Meine berufliche Laufbahn umfasst intensive Developer Akademie Schulung in Webapplikationen und Front-End-Technologien, in denen ich spezialisierte Fähigkeiten zur Optimierung von Benutzererfahrung und Schnittstellendesign entwickelt habe.",
   items: [
     {
       company: "Digital A-Team",
@@ -115,7 +115,7 @@ const education = {
 const skills = {
   title: "Meine Fähigkeiten",
   description:
-    "Ich habe eine starke Basis in der Front-End-Entwicklung und bin auf die Gestaltung responsiver und benutzerfreundlicher Interfaces spezialisiert. Meine Kompetenzen erstrecken sich über diverse Front-End-Technologien, mit denen ich effiziente und skalierbare Webanwendungen realisiere, die sowohl die Benutzererfahrung als auch die Nutzerbindung verbessern. Folgende Technologien beherrsche ich sicher:",
+    "Ich habe eine starke Basis in der Front-End-Entwicklung und bin auf die Gestaltung responsiver und benutzerfreundlicher Interfaces spezialisiert. Meine Kompetenzen erstrecken sich über diverse Front-End-Technologien, mit denen ich effiziente und skalierbare Webanwendungen realisiere, die sowohl die Benutzererfahrung als auch die Nutzerbindung verbessern. Folgende Technologien beherrsche ich:",
   skillList: [
     {
       icon: <FaReact />,

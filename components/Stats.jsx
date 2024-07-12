@@ -23,7 +23,7 @@ export const Stats = () => {
       showPlus: false
     },
     {
-      num: 250,
+      num: 400,
       text: "Code Commits",
       showPlus: false
     },
