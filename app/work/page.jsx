@@ -20,24 +20,24 @@ import Image from "next/image";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
 
 const projects = [
-/*   {
+  {
     num: "01",
     category: "Web Development",
     title: "project 1",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Dieses Projekt ist eine Webanwendung, die es Nutzern ermöglicht, Video- und Audioaufnahmen zu erstellen. Sie bietet verschiedene Modi für Bildschirm- und Kameraaufnahmen, ideal für Präsentationen. Zusätzliche Funktionen umfassen Hintergrundauswahl, Blur-Effekte, Bildupload und Audiopegelanzeige. Aufgenommene Medien können direkt gespeichert werden",
     stack: [
-      { name: "Angular" },
+      { name: "React" },
       { name: "TypeScript" },
-      { name: "SCSS" },
-      { name: "Firebase" },
+      { name: "Ant Design" },
+      { name: "TensorFlow.js" },
     ],
-    image: "/assets/project_img/Pollo.png",
-    live: "",
+    image: "/assets/project_img/recorder.png",
+    live: "https://ulugbek-kobulov.com/recorder/",
     github: "",
-  }, */
+  },
   {
-    num: "01",
+    num: "02",
     category: "Web Development",
     title: "project 1",
     description:
@@ -53,7 +53,7 @@ const projects = [
     github: "https://github.com/KobulovUlugbek/TrailerFlix",
   },
   {
-    num: "02",
+    num: "03",
     category: "Web Development",
     title: "project 2",
     description:
@@ -64,7 +64,7 @@ const projects = [
     github: "https://github.com/KobulovUlugbek/El-POLLO-LOCO",
   },
   {
-    num: "03",
+    num: "04",
     category: "Web Development",
     title: "project 3",
     description:
@@ -137,6 +137,8 @@ export const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project btn */}
+                {project.github && (
+
                 <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -149,6 +151,7 @@ export const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                )}
               </div>
             </div>
           </div>
