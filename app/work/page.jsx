@@ -30,7 +30,7 @@ const projects = [
       { name: "React" },
       { name: "TypeScript" },
       { name: "Ant Design" },
-      { name: "TensorFlow.js" },
+      { name: "TensorFlow Js" },
     ],
     image: "/assets/project_img/recorder.png",
     live: "https://ulugbek-kobulov.com/recorder/",
@@ -39,7 +39,22 @@ const projects = [
   {
     num: "02",
     category: "Web Development",
-    title: "project 1",
+    title: "project 2",
+    description:"Mein Portfolio nutzt neueste Webtechnologien wie React und Next.js, um meine Entwicklerprojekte und -fähigkeiten effektiv darzustellen. Die Website zeichnet sich durch schnelle Ladezeiten und eine benutzerfreundliche, responsive Gestaltung mittels Tailwind CSS aus. Subtile Animationen durch Framer Motion verbessern das visuelle Erlebnis. Ein PHP-Backend ermöglicht zudem schnelles Feedback auf Nutzeranfragen.",
+    stack: [
+      { name: "React & Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "Framer Motion" },
+      { name: "PHP" },
+    ],
+    image: "/assets/project_img/portfolio.png",
+    live: "https://ulugbek-kobulov.com",
+    github: "https://github.com/KobulovUlugbek/my-portfolio",
+  },
+  {
+    num: "03",
+    category: "Web Development",
+    title: "project 3",
     description:
       "Die auf Angular und TypeScript basierende TrailerFlix-Website ist eine dynamische Plattform, die über eine API JSON-Daten abruft und auf deren Basis die gesamte Website generiert. Diese innovative Anwendung bietet den Nutzern ein nahtloses Erlebnis beim Ansehen von Filmtrailern und Informationen.",
     stack: [
@@ -53,9 +68,9 @@ const projects = [
     github: "https://github.com/KobulovUlugbek/TrailerFlix",
   },
   {
-    num: "03",
+    num: "04",
     category: "Web Development",
-    title: "project 2",
+    title: "project 4",
     description:
       "Das objektorientierte Spiel 'Jump, Run, and Throw' kombiniert ein durchdachtes Design mit einem spannenden Gameplay. Spieler helfen Pepe dabei, Münzen zu sammeln und mit Tabasco-Salsa die Herausforderungen zu überwinden. Durch die Integration von interaktiven Elementen und dynamischen Power-Ups entsteht ein packendes Spielerlebnis.",
     stack: [{ name: "JavaScript" }, { name: "HTML" }, { name: "CSS" }],
@@ -64,9 +79,9 @@ const projects = [
     github: "https://github.com/KobulovUlugbek/El-POLLO-LOCO",
   },
   {
-    num: "04",
+    num: "05",
     category: "Web Development",
-    title: "project 3",
+    title: "project 5",
     description:
       "Ich habe eine intuitive Aufgabenverwaltungslösung basierend auf dem Kanban-System entwickelt. Sie ermöglicht das einfache Anordnen von Aufgaben per Drag-and-Drop. Nutzer können Aufgaben Teammitgliedern zuweisen und übersichtlich kategorisieren, was die Organisation vereinfacht und die Benutzerfreundlichkeit steigert.",
     stack: [{ name: "JavaScript" }, { name: "HTML" }, { name: "CSS" }],
