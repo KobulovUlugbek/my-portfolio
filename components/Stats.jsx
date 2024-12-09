@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 import { useState, useEffect } from "react";
 
 export const Stats = () => {
-  const [yearsExperience, setYearsExperience] = useState(2);
+  const [yearsExperience, setYearsExperience] = useState(3);
 
   const stats = [
     {
@@ -13,7 +13,7 @@ export const Stats = () => {
       showPlus: true
     },
     {
-      num: 15,
+      num: 20,
       text: "Abgeschlossene Projekte",
       showPlus: false
     },
@@ -23,7 +23,7 @@ export const Stats = () => {
       showPlus: false
     },
     {
-      num: 400,
+      num: 700,
       text: "Code Commits",
       showPlus: false
     },

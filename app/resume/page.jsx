@@ -14,6 +14,7 @@ import {
   FaServer,
   FaShapes,
 } from "react-icons/fa";
+import { FaWordpress } from 'react-icons/fa';
 
 import { SiGraphql, SiTailwindcss, SiTypescript } from "react-icons/si";
 
@@ -35,7 +36,7 @@ const about = {
     },
     {
       fieldName: "Erfahrung",
-      fieldValue: "Mehr als 2 Jahre",
+      fieldValue: "Mehr als 3 Jahre",
     },
     {
       fieldName: "Email",
@@ -61,6 +62,11 @@ const experience = {
   description:
     "Ich bringe eine umfassende Erfahrung in der Webentwicklung mit, insbesondere in der Gestaltung responsiver und benutzerfreundlicher Front-End-Designs. Meine berufliche Laufbahn umfasst intensive Developer Akademie Schulung in Webapplikationen und Front-End-Technologien, in denen ich spezialisierte Fähigkeiten zur Optimierung von Benutzererfahrung und Schnittstellendesign entwickelt habe.",
   items: [
+    {
+      company: "BZ.medien Digital GmbH",
+      position: "Frontend Entwickler",
+      duration: "2024 - bis jetzt",
+    },
     {
       company: "Digital A-Team",
       position: "Frontend Entwickler",
@@ -98,6 +104,11 @@ const education = {
       duration: "2023",
     },
     {
+      institution: "Weiterbildung - Alitech",
+      degree: "Front-End Development Bootcamp",
+      duration: "2022",
+    },
+    {
       institution: "Diakonisches Institut für Soziale Berufe",
       degree: "Staatlich anerkannter Arbeitserzieher",
       duration: "2018-2021",
@@ -132,6 +143,10 @@ const skills = {
     {
       icon: <FaJs />,
       name: "JavaScript",
+    },
+    {
+      icon: <FaWordpress />,
+      name: "Wordpress",
     },
     {
       icon: <FaBootstrap />,
